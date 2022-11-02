@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         generateValues()
         updateLabels()
         presetLabel.text = "preset: \(generatedAnimation)"
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
     @IBAction func runAnimationButton(_ sender: SpringButton) {
         getAnimate()
         updateLabels()
+        
         presetLabel.text = "preset: \(animatedView.animation)"
         runButtonLabel.setTitle("Run \(generatedAnimation)", for: .normal)
     }
@@ -48,7 +50,6 @@ class ViewController: UIViewController {
     // MARK: - Private methods
     private func updateLabels() {
         curveLabel.text = "curve: \(generatedCurve)"
-        
         forceLabel.text = String(format: "force:  %.1f\n", generatedForce)
         durationLabel.text = String(format: "duration:  %.1f\n", generatedDuration)
         delayLabel.text = String(format: "delay:  %.1f\n", generatedDelay)
