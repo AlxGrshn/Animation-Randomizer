@@ -23,8 +23,6 @@ struct Animation {
             )
             animationsList.append(animation)
         }
-        
         return animationsList
-        
     }
 }
