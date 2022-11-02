@@ -75,7 +75,7 @@
                                     <constraint firstAttribute="height" constant="43" id="Otx-aI-zHW"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="RUN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -97,6 +97,13 @@
                             <constraint firstItem="Hvh-MO-OVE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yE9-b7-giy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="curveLabel" destination="oOj-Tz-nqP" id="asp-y3-gcO"/>
+                        <outlet property="delayLabel" destination="I20-ub-vL4" id="RBY-8d-rQT"/>
+                        <outlet property="durationLabel" destination="Jnp-br-Tx8" id="WTR-lb-ntd"/>
+                        <outlet property="forceLabel" destination="Nur-Ww-nnn" id="9Wq-l1-M4o"/>
+                        <outlet property="presetLabel" destination="5Ix-5G-5jB" id="3Gq-Yv-Yd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

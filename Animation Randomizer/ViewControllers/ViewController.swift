@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet var presetLabel: UILabel!
+    @IBOutlet var curveLabel: UILabel!
+    @IBOutlet var forceLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
+    @IBOutlet var delayLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+    
+    
 
 
 }
