@@ -11,15 +11,20 @@ struct Animation {
     
     static func getAnimation() -> [Animation] {
         var animationsList: [Animation] = []
-        
-        let animations = AnimationsForm.shared.animations
-        let curves = AnimationsForm.shared.curves
+
+        let animations = AnimationsForm.shared.animations.shuffled()
+        let curves = AnimationsForm.shared.curves.shuffled()
         let iterationCount = min(animations.count, curves.count)
-        
+
         for index in 0..<iterationCount {
-            let animation = Animation(animationType: animations[index], curveType: curves[index])
+            let animation = Animation(
+                animationType: animations[index],
+                curveType: curves[index]
+            )
             animationsList.append(animation)
         }
+        
         return animationsList
+        
     }
 }

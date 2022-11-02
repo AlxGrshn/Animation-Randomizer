@@ -83,6 +83,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlf-Mj-SIF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -98,11 +101,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animatedView" destination="Hvh-MO-OVE" id="acc-fo-sbv"/>
                         <outlet property="curveLabel" destination="oOj-Tz-nqP" id="asp-y3-gcO"/>
                         <outlet property="delayLabel" destination="I20-ub-vL4" id="RBY-8d-rQT"/>
                         <outlet property="durationLabel" destination="Jnp-br-Tx8" id="WTR-lb-ntd"/>
                         <outlet property="forceLabel" destination="Nur-Ww-nnn" id="9Wq-l1-M4o"/>
                         <outlet property="presetLabel" destination="5Ix-5G-5jB" id="3Gq-Yv-Yd7"/>
+                        <outlet property="runButtonLabel" destination="8oC-Lx-ncs" id="f5X-Il-75y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

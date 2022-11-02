@@ -9,8 +9,7 @@ class AnimationsForm {
     
     static let shared = AnimationsForm()
     
-    let animations =
-    [
+    let animations = [
         "pop",
         "slideLeft",
         "slideRight",
@@ -39,8 +38,7 @@ class AnimationsForm {
         "swing"
     ]
     
-    let curves =
-    [
+    let curves = [
         "easeIn",
         "easeOut",
         "easeInOut",
@@ -73,4 +71,5 @@ class AnimationsForm {
     ]
     
     private init() {}
+    
 }
